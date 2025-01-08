@@ -7,7 +7,7 @@ btn.addEventListener("click", async function(){
     let city =cityInput.value;
     const weatherdata=await getWeatherInfo(city)
     console.log(weatherdata.main,temp)
-    temp.innerHTML=weatherdata.main.temp+""
+    temp.innerHTML=weatherdata.main.temp+"°C"
 })
 
     async function getWeatherInfo(city)
